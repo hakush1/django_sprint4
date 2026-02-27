@@ -1,0 +1,244 @@
+:root {
+  --bg: #f3f6fb;
+  --bg-soft: #e7eef8;
+  --surface: #ffffff;
+  --text: #1f2835;
+  --muted: #5c6a79;
+  --line: #d5deea;
+  --accent: #1670e6;
+  --accent-strong: #0f58b9;
+  --ok: #0f9f57;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top right, #d9ecff 0%, transparent 38%),
+    radial-gradient(circle at bottom left, #dbe7ff 0%, transparent 40%),
+    var(--bg);
+}
+
+.top-nav {
+  background: linear-gradient(120deg, #88c7ff, #4aa7ff 58%, #2f8af7);
+  border-bottom: 1px solid #8bc5ff;
+  box-shadow: 0 4px 18px rgba(22, 60, 112, 0.2);
+}
+
+.navbar-brand {
+  color: #0e2a4d;
+  font-weight: 700;
+}
+
+.brand-logo {
+  border-radius: 9px;
+  box-shadow: 0 4px 10px rgba(16, 54, 99, 0.25);
+}
+
+.nav-link {
+  color: #133257;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #0c2441;
+}
+
+.category-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category-chip {
+  padding: 4px 10px;
+  border: 1px solid #99c8f8;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: #174272;
+  font-size: 0.86rem;
+  text-decoration: none;
+}
+
+.category-chip:hover {
+  color: #0f3055;
+  background: #ffffff;
+}
+
+.forum-hero {
+  margin-bottom: 28px;
+  padding: 20px 24px;
+  border: 1px solid #c8d8ec;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff, #eff6ff);
+  box-shadow: 0 12px 28px rgba(35, 65, 105, 0.1);
+}
+
+.forum-hero h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.forum-hero p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.forum-card {
+  width: min(100%, 780px);
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 14px 32px rgba(31, 56, 93, 0.1);
+}
+
+.card-header {
+  background: linear-gradient(180deg, #f7faff, #eef5ff);
+  border-bottom: 1px solid #d5e2f2;
+  font-weight: 700;
+}
+
+.card-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  color: #1a2b44;
+}
+
+.card-subtitle {
+  line-height: 1.4;
+}
+
+.card-link {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.card-link:hover {
+  color: var(--accent-strong);
+}
+
+.btn-outline-primary {
+  border-color: #2f77d8;
+  color: #18457d;
+}
+
+.btn-outline-primary:hover {
+  border-color: #2f77d8;
+  background-color: #2f77d8;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #2f80ed, #2268c6);
+  border-color: #2268c6;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(180deg, #236fce, #1a57a2);
+  border-color: #1a57a2;
+}
+
+.post-image {
+  max-height: 430px;
+  width: 100%;
+  object-fit: cover;
+  border-color: #c9d9ee;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.profile-pill {
+  padding: 7px 12px;
+  border: 1px solid #cfdceb;
+  border-radius: 999px;
+  background: #f6faff;
+  color: #274564;
+  font-size: 0.92rem;
+}
+
+.comment-form-box {
+  margin: 20px 0 24px;
+  padding: 16px;
+  border: 1px solid #d5e1ef;
+  border-radius: 12px;
+  background: #f8fbff;
+}
+
+.media {
+  gap: 12px;
+}
+
+.media-body {
+  flex: 1;
+  border: 1px solid #d5e1ef;
+  border-radius: 12px;
+  background: #f8fbff;
+  padding: 12px 14px;
+}
+
+.comment-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 170px;
+}
+
+.comment-author {
+  color: #1f4e84;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.comment-author:hover {
+  color: #173d69;
+}
+
+.page-link {
+  color: #1b5eb0;
+}
+
+.page-item.active .page-link {
+  background-color: #1f6fd3;
+  border-color: #1f6fd3;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #243a53;
+}
+
+footer {
+  color: var(--muted);
+}
+
+.site-footer {
+  background: linear-gradient(180deg, #f6fbff, #edf4ff);
+  border-top-color: #cfdced !important;
+}
+
+.site-signature {
+  font-size: 0.96rem;
+  font-weight: 600;
+  color: #274567;
+}
+
+@media (max-width: 768px) {
+  .forum-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .comment-actions {
+    min-width: 0;
+  }
+}

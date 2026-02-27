@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+  Лента записей
+{% endblock %}
+{% block content %}
+  <section class="forum-hero">
+    <h1>Форум Блогикум</h1>
+    <p>Обсуждаем Django, учебу и личный опыт разработки.</p>
+  </section>
+  {% for post in page_obj %}
+    <article class="mb-5">
+      {% include "includes/post_card.html" %}
+    </article>
+  {% endfor %}
+  {% include "includes/paginator.html" %}
+{% endblock %}

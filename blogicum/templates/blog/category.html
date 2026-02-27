@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+  Публикации в категории {{ category.title }}
+{% endblock %}
+{% block content %}
+  <section class="forum-hero">
+    <h1>Категория: {{ category.title }}</h1>
+    <p>{{ category.description }}</p>
+  </section>
+  {% for post in page_obj %}
+    <article class="mb-5">  
+      {% include "includes/post_card.html" %}
+    </article>   
+  {% endfor %}
+  {% include "includes/paginator.html" %}
+{% endblock %}
